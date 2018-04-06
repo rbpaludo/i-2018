@@ -25,7 +25,6 @@ public class ConverteTxtBin_5 {
 				data = linha.getBytes("UTF-8");
 				out.write(data.length);
 				out.write(data);
-				out.write(0xFE);
 			}
 			
 			out.write(0xFF);
