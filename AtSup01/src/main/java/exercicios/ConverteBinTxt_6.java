@@ -26,6 +26,6 @@ public class ConverteBinTxt_6 {
 			System.out.println(new String(Arrays.copyOfRange(data, i, i+quantBytes), "UTF-8"));
 			i += quantBytes;
 			
-		}while (!new String(String.format("%02X ", data[i])).contains("FF"));
+		} while (!new String(String.format("%02X ", data[i])).contains("FF"));
 	}
 }
