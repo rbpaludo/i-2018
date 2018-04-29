@@ -3,26 +3,26 @@
 3 - nil não é um valor reconhecido pelo JSON, deve ser escrito null.  
 4 -   
 {  
-..."cadence":"12",  
-..."gear":"15",  
-..."speed":"65"  
+   "cadence":"12",  
+   "gear":"15",  
+   "speed":"65"  
 }  
 5a)  
 {  
-..."cidade":"Goiânia",  
-..."cidade":"Trindade"  
+   "cidade":"Goiânia",  
+   "cidade":"Trindade"  
 }  
 5b)  
 {  
-..."salada":"alface"  
+   "salada":"alface"  
 }  
 5c)  
 {  
-..."altura":2.3  
+   "altura":2.3  
 }  
 5d)  
 {  
-..."sabor":null  
+   "sabor":null  
 }  
 6 -   
 curl https://<span></span>headers.jsontest.com
