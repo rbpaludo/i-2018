@@ -41,4 +41,10 @@ public class Comunicacao {
 		this.detalhe = detalhe;
 		this.uso = uso;
 	}
+	
+	@Override
+	public String toString() {
+		return "\n --Comunicacao [meio=" + meio + ", preferencia=" + preferencia + ", detalhe=" + detalhe + ", uso=" + uso
+				+ "]";
+	}
 }

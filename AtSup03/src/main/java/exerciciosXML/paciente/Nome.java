@@ -85,4 +85,21 @@ public class Nome {
 		this.prefixos = prefixos;
 		this.usoCondicional = usoCondicional;
 	}
+	
+	@Override
+	public String toString() {
+		String output = "\n --Nome [surrogateKey=" + surrogateKey + ", titulos=" + titulos + ", nomes=" + nomes + ", sobrenomes="
+				+ sobrenomes + ", sufixos=" + sufixos + ", prefixos=" + prefixos + ", usoCondicional=" + usoCondicional;
+		
+		if(this.utilizacao != null) {
+			output += ", utilizacao=" + utilizacao.toString(); 
+		}
+		
+		if(this.representacao != null) {
+			output += ", representacao=" + representacao.toString();
+		}
+		
+		output += "]";
+		return output;
+	}
 }

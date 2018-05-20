@@ -23,4 +23,9 @@ public class LinhaEndereco {
 		this.ordem = ordem;
 		this.linha = linha;
 	}
+	
+	@Override
+	public String toString() {
+		return "\n ----LinhaEndereco [ordem=" + ordem + ", linha=" + linha + "]";
+	}
 }

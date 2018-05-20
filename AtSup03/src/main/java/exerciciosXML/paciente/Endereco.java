@@ -1,5 +1,7 @@
 package exerciciosXML.paciente;
 
+import java.util.Arrays;
+
 public class Endereco {
 	private int surrogateKey;
 	private String bairro;
@@ -110,5 +112,26 @@ public class Endereco {
 		this.caixaPostal = caixaPostal;
 		this.pais = pais;
 		this.tipo = tipo;
+	}
+	
+	@Override
+	public String toString() {
+		String output = "\n --Endereco [surrogateKey=" + surrogateKey + ", bairro=" + bairro + ", distrito=" + distrito
+				+ ", codMunicipio=" + codMunicipio + ", estado=" + estado + ", CEP=" + CEP + ", caixaPostal="
+				+ caixaPostal + ", pais=" + pais + ", tipo=" + tipo;
+		
+		if(this.linhaEndereco != null) {
+			output += ", linhaEndereco=" + Arrays.toString(linhaEndereco);
+		}
+		
+		if(this.dataInicio != null) {
+			 output += ", dataInicio=" + dataInicio.toString();
+		}
+		
+		if(this.dataFim != null) {
+			 output += ", dataFim=" + dataFim.toString();
+		}
+		output += "]";
+		return output;
 	}
 }

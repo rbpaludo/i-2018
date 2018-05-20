@@ -23,4 +23,9 @@ public class TituloEleitoral {
 		this.secao = secao;
 		this.zona = zona;
 	}
+	
+	@Override
+	public String toString() {
+		return "\n ---TituloEleitoral [secao=" + secao + ", zona=" + zona + "]";
+	}
 }

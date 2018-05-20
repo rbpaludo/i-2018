@@ -33,7 +33,9 @@ public class Estudante {
 
 	@Override
 	public String toString() {
-		return "Estudante [nome=" + nome + ", endereco=\n" + endereco.toString() + "]";
+		return "-- Estudante -- \n"
+				+ "   Nome: " + nome + " \n"
+				+ "   Endereco: " + endereco.toString() + " \n";
 	}
 
 	public Estudante() {

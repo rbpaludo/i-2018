@@ -50,4 +50,10 @@ public class Certidao {
 		this.folha = folha;
 		this.termo = termo;
 	}
+	
+	@Override
+	public String toString() {
+		return "\n --Certidao [tipo=" + tipo + ", cartorio=" + cartorio + ", livro=" + livro + ", folha=" + folha
+				+ ", termo=" + termo + "]\n";
+	}
 }

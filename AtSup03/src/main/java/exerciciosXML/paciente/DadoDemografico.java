@@ -108,8 +108,8 @@ public class DadoDemografico {
 	}
 	
 	public DadoDemografico(String sexo, String nomePai, String nomeMae, String situacaoFamiliar, String raca,
-			String comentario, String fonteNotificObito, String nascimentoPluralidade, String nascimentoOrdem,
-			String nascimentoSeguimento, Data dataObito, Data dataNascimento) {
+			String comentario, String nascimentoPluralidade, String nascimentoOrdem,
+			String nascimentoSeguimento) {
 		super();
 		this.sexo = sexo;
 		this.nomePai = nomePai;
@@ -117,10 +117,32 @@ public class DadoDemografico {
 		this.situacaoFamiliar = situacaoFamiliar;
 		this.raca = raca;
 		this.comentario = comentario;
-		this.fonteNotificObito = fonteNotificObito;
 		this.nascimentoPluralidade = nascimentoPluralidade;
 		this.nascimentoOrdem = nascimentoOrdem;
 		this.nascimentoSeguimento = nascimentoSeguimento;
+	}
+	
+	@Override
+	public String toString() {
+		String output = "\n -DadoDemografico [sexo=" + sexo + ", nomePai=" + nomePai + ", nomeMae=" + nomeMae + ", situacaoFamiliar="
+				+ situacaoFamiliar + ", raca=" + raca + ", comentario=" + comentario + ", fonteNotificObito="
+				+ fonteNotificObito + ", nascimentoPluralidade=" + nascimentoPluralidade + ", nascimentoOrdem="
+				+ nascimentoOrdem + ", nascimentoSeguimento=" + nascimentoSeguimento;
+		
+		if(this.dataNascimento != null) {
+			output += ", dataNascimento=" + dataNascimento.toString();
+		}
+		
+		if(this.dataObito != null) {
+			output += ", dataObito=" + dataObito.toString();
+		}
+		
+		if(this.nacionalidade != null) {
+			 output += ", nacionalidade=" + nacionalidade.toString();
+		}
+		
+		output  += "]";
+		return output;
 	}
 	
 }

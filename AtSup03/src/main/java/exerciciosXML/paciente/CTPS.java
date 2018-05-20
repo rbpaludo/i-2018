@@ -23,4 +23,9 @@ public class CTPS {
 		this.serie = serie;
 		this.estado = estado;
 	}
+	
+	@Override
+	public String toString() {
+		return "\n ---CTPS [serie=" + serie + ", estado=" + estado + "]";
+	}
 }

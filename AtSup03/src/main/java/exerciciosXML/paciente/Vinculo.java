@@ -43,4 +43,10 @@ public class Vinculo {
 		this.dataFim = dataFim;
 		this.identificador = identificador;
 	}
+	
+	@Override
+	public String toString() {
+		return "\n --Vinculo [relacionamento=" + relacionamento + ", dataInicio=" + dataInicio + ", dataFim=" + dataFim
+				+ ", identificador=" + identificador + "]";
+	}
 }

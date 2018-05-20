@@ -29,6 +29,8 @@ public class Turma {
 
 	@Override
 	public String toString() {
-		return "Turma [disciplina=" + disciplina + ", estudantes=" + Arrays.toString(estudantes) + "]";
+		return "Turma ---- \n"
+				+ "Disciplina: " + disciplina + " \n"
+				+ "Estudantes: " + Arrays.toString(estudantes) + "";
 	}
 }

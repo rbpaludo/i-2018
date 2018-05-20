@@ -23,4 +23,10 @@ public class Representacao {
 		this.utilizacao = utilizacao;
 		this.alternativa = alternativa;
 	}
+	
+	@Override
+	public String toString() {
+		return "\n ----Representacao [utilizacao=" + utilizacao + ", alternativa=" + alternativa + "]";
+	}
+	
 }

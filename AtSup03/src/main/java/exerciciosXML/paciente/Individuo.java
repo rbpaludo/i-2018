@@ -1,5 +1,7 @@
 package exerciciosXML.paciente;
 
+import java.util.Arrays;
+
 public class Individuo {
 	private int surrogateKey;
 	private Comunicacao[] comunicacoes;
@@ -63,5 +65,31 @@ public class Individuo {
 		this.surrogateKey = surrogateKey;
 		this.nomes = nomes;
 		this.identificadores = identificadores;
+	}
+	
+	@Override
+	public String toString() {
+		String output = "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
+				+ "Individuo Código: " + surrogateKey + "\n - Nomes: \n" + Arrays.toString(nomes) + "\n - Identificadores: \n"
+				+ Arrays.toString(identificadores);
+		
+		if(this.comunicacoes != null) {
+			output += "\n - Comunicacoes: \n" + Arrays.toString(comunicacoes);
+		}
+		
+		if(this.dadoDemografico != null) {
+			output += "\n - Dado Demografico: \n" + dadoDemografico.toString(); 
+		}
+		
+		if(this.enderecos != null) {
+			output += "\n - Enderecos: \n" + Arrays.toString(enderecos);
+		}
+		
+		if(this.vinculos != null) {
+			output += "\n - Vinculos: \n" + Arrays.toString(vinculos);
+		}
+		
+		output += "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*";
+		return output;
 	}
 }

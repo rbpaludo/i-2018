@@ -43,4 +43,10 @@ public class Utilizacao {
 		this.dataFinal = dataFinal;
 		this.identificador = identificador;
 	}
+	
+	@Override
+	public String toString() {
+		return "\n ----Utilizacao [uso=" + uso + ", dataInicial=" + dataInicial + ", dataFinal=" + dataFinal
+				+ ", identificador=" + identificador + "]";
+	}
 }

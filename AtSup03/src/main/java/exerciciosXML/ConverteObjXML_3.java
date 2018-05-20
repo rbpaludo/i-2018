@@ -1,15 +1,11 @@
 package exerciciosXML;
 
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 
 import javax.xml.stream.XMLStreamException;
-
-import org.codehaus.stax2.XMLOutputFactory2;
-import org.codehaus.stax2.XMLStreamWriter2;
 
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
@@ -36,14 +32,14 @@ public class ConverteObjXML_3 {
 		turma.setEstudantes(estudantes);
 		turma.setDisciplina("Integração de Aplicações");
 		
+		System.out.println("Para economizar seu tempo, a turma a ser armazenada é a seguinte: \n" + turma.toString() + "\n\n");
+		
 		try {
 			serializaTurma(turma);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println("Houve um problema no processo de escrever o arquivo XML. É provável que o arquivo informado não exista");
 		} catch (XMLStreamException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println("Houve um problema no processo de converter o objeto Turma para o texto XML.");
 		}
 	}
 	

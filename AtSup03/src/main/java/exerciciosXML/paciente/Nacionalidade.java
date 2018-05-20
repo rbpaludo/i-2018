@@ -47,4 +47,10 @@ public class Nacionalidade {
 		this.pais = pais;
 		this.dataEntradaPais = dataEntradaPais;
 	}
+
+	@Override
+	public String toString() {
+		return "\n --Nacionalidade [municipio=" + municipio + ", estado=" + estado + ", pais=" + pais + ", dataEntradaPais="
+				+ dataEntradaPais.toString() + "]";
+	}
 }

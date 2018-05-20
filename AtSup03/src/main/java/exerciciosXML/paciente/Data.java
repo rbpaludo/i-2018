@@ -37,4 +37,9 @@ public class Data {
 		this.data = data;
 		this.acuracia = acuracia;
 	}
+	
+	@Override
+	public String toString() {
+		return "\n ---Data [data=" + data + ", acuracia=" + acuracia + "]";
+	}
 }
