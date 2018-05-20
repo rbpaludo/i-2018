@@ -19,7 +19,7 @@ public class App
     	Scanner scanner = new Scanner(System.in);
     	do {
     		try {
-    			System.out.println("\n\n\nBem vindo ao conjunto de algoritmos da primeira atividade supervisionada!");
+    			System.out.println("\n\n\nBem vindo ao conjunto de algoritmos da segunda atividade supervisionada!");
     			System.out.println("Insira de 1 a 3, conforme a questão que deseja testar ou 0 para sair:\n");
     			System.out.println("1 - Exceção de classe não serializavel \n"
     					+ "2 - Serialização e desserialização de uma classe \n"
