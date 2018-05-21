@@ -6,6 +6,10 @@ public class Comunicacao {
 	private String detalhe;
 	private String uso;
 	
+	public Comunicacao() {
+		super();
+	}
+	
 	public String getMeio() {
 		return meio;
 	}

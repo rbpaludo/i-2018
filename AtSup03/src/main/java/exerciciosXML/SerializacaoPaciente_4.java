@@ -67,6 +67,6 @@ public static void serializaPaciente(Individuo individuo, String arquivo) throws
 		
 		String data = objMapper.writeValueAsString(individuo);
 		
-		Files.write(Paths.get("pacienteXML.xml"), data.getBytes(), StandardOpenOption.APPEND);
+		Files.write(Paths.get(arquivo), data.getBytes(), StandardOpenOption.APPEND);
 	}
 }

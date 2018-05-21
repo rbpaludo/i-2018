@@ -4,6 +4,10 @@ public class LinhaEndereco {
 	private String ordem;
 	private int linha;
 	
+	public LinhaEndereco() {
+		super();
+	}
+	
 	public String getOrdem() {
 		return ordem;
 	}

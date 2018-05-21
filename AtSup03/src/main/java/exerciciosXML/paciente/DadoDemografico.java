@@ -15,6 +15,10 @@ public class DadoDemografico {
 	private Data dataNascimento;
 	private Nacionalidade nacionalidade;
 	
+	public DadoDemografico() {
+		super();
+	}
+	
 	public String getSexo() {
 		return sexo;
 	}

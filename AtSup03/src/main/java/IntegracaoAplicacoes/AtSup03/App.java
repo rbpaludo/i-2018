@@ -65,7 +65,10 @@ public class App
     				System.out.println("\n Opção inválida, insira um dos números que são dados \n");
     			}
     		} catch (IOException e) {
-    			System.out.println("Houve um problema no processo de escrever dados em algum arquivo. É provável que o arquivo informado não exista");
+    			System.out.println("Houve um problema no processo de escrever dados em algum arquivo. \n"
+    					+ "É provável que o arquivo informado não exista. \n"
+    					+ "Envie este erro para o desenvolvedor:");
+    			e.printStackTrace();
 			} catch (XMLStreamException e) {
 				System.out.println("Houve um problema no processo de converter algum ojeto para XML. ");
 			} catch (ParseException e) {

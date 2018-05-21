@@ -4,6 +4,10 @@ public class Representacao {
 	private String utilizacao;
 	private String alternativa;
 	
+	public Representacao() {
+		super();
+	}
+	
 	public String getUtilizacao() {
 		return utilizacao;
 	}

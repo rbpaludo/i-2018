@@ -11,6 +11,10 @@ public class Nome {
 	private Utilizacao utilizacao;
 	private Representacao representacao;
 	
+	public Nome() {
+		super();
+	}
+	
 	public int getSurrogateKey() {
 		return surrogateKey;
 	}

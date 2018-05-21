@@ -8,6 +8,10 @@ public class Utilizacao {
 	private Calendar dataFinal;
 	private Identificador identificador;
 	
+	public Utilizacao() {
+		super();
+	}
+	
 	public String getUso() {
 		return uso;
 	}

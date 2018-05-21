@@ -16,6 +16,10 @@ public class Endereco {
 	private Data dataInicio;
 	private Data dataFim;
 	
+	public Endereco() {
+		super();
+	}
+	
 	public int getSurrogateKey() {
 		return surrogateKey;
 	}

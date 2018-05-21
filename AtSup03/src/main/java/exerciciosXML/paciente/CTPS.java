@@ -4,6 +4,10 @@ public class CTPS {
 	private String serie;
 	private String estado;
 	
+	public CTPS() {
+		super();
+	}
+	
 	public String getSerie() {
 		return serie;
 	}

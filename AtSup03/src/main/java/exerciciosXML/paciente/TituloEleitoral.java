@@ -4,6 +4,10 @@ public class TituloEleitoral {
 	private String secao;
 	private String zona;
 	
+	public TituloEleitoral() {
+		super();
+	}
+	
 	public String getSecao() {
 		return secao;
 	}

@@ -11,6 +11,10 @@ public class Individuo {
 	private Vinculo[] vinculos;
 	private Identificador[] identificadores;
 	
+	public Individuo() {
+		super();
+	}
+	
 	public int getSurrogateKey() {
 		return surrogateKey;
 	}

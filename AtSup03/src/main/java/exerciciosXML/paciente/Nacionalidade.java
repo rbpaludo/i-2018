@@ -8,6 +8,10 @@ public class Nacionalidade {
 	private String pais;
 	private Calendar dataEntradaPais;
 	
+	public Nacionalidade() {
+		super();
+	}
+
 	public String getMunicipio() {
 		return municipio;
 	}

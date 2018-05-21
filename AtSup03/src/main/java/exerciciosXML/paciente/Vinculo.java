@@ -8,6 +8,10 @@ public class Vinculo {
 	private Calendar dataFim;
 	private Identificador identificador;
 	
+	public Vinculo() {
+		super();
+	}
+	
 	public String getRelacionamento() {
 		return relacionamento;
 	}

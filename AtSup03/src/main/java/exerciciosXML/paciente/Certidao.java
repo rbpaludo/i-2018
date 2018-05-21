@@ -7,6 +7,10 @@ public class Certidao {
 	private String folha;
 	private String termo;
 	
+	public Certidao() {
+		super();
+	}
+	
 	public String getTipo() {
 		return tipo;
 	}

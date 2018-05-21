@@ -13,6 +13,10 @@ public class Identificador {
 	private Certidao certidao;
 	private TituloEleitoral tituloEleitoral;
 
+	public Identificador() {
+		super();
+	}
+	
 	public int getSurrogateKey() {
 		return surrogateKey;
 	}
