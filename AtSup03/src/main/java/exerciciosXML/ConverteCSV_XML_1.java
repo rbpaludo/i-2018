@@ -5,7 +5,20 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 
+/**
+ * Classe para fazer a leitura de um arquivo .csv de alunos e converter para um arquivo XML com os alunos contidos no .csv
+ * @author rbpaludo
+ *
+ */
 public class ConverteCSV_XML_1 {
+	
+	/**
+	 * Lê o arquivo, com uma lista de alunos, informado e converte para um arquivo XML com os alunos lidos
+	 * 
+	 * @param args Nome do arquivo a ser lido
+	 * @throws IOException Caso aconteça algum erro durante o armazenamento de algum arquivo. 
+	 * 						Provavelmente por inexistência do arquivo informado.
+	 */
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader(args[0]));
 		

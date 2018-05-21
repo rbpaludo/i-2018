@@ -15,11 +15,16 @@ import exerciciosXML.SerializacaoPaciente_4;
 import exerciciosXML.turma.Turma;
 
 /**
- * Hello world!
+ * 
+ * @author rbpaludo
  *
  */
 public class App 
 {
+	/**
+	 * Menu para funcionalidades das atividades supervisionadas
+	 * @param args: Não utilizado 
+	 */
 	public static void main( String[] args )
     {
     	int resposta = 0;

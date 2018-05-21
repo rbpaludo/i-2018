@@ -21,8 +21,22 @@ import exerciciosXML.calcados.calcado;
 import exerciciosXML.calcados.Sapato;
 import exerciciosXML.calcados.Tenis;
 
+/**
+ * Classe para leitura de um XML com registros de calçados e desserialização para output de tênis e sapatos.
+ * 
+ * @author rbpaludo
+ *
+ */
 public class CarregaXML_2 {
 
+	/**
+	 * Lê o arquivo informado e imprime uma lista de Tênis e Sapatos
+	 * 
+	 * @param args Nome do arquivo a ser lido
+	 * @throws IOException Caso aconteça algum erro durante o armazenamento de algum arquivo. 
+	 * 						Provavelmente por inexistência do arquivo informado.
+	 * @throws XMLStreamException Caso aconteça algum erro durante a serialização da instância criada. 
+	 */
 	public static void main(String[] args) throws IOException, XMLStreamException {
 		Path arquivoXML = Paths.get(args[0]);
 		BufferedReader br = Files.newBufferedReader(arquivoXML, Charset.forName("UTF-8"));

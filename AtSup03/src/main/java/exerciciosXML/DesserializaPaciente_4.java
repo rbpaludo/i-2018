@@ -12,7 +12,20 @@ import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
 import exerciciosXML.paciente.Individuo;
 
+/**
+ * Classe para desserializar uma instância de Individuo armazenada em um arquivo .xml
+ * @author rbpaludo
+ *
+ */
 public class DesserializaPaciente_4 {
+	
+	/**
+	 * Lê o arquivo .xml informado e desserializa-o, imprimindo o resultado. 
+	 * @param args Nome do arquivo a ser lido
+	 * @throws IOException Caso aconteça algum erro durante o armazenamento de algum arquivo. 
+	 * 						Provavelmente por inexistência do arquivo informado.
+	 * @throws ParseException Caso aconteça algum erro durante a serialização da instância criada. 
+	 */
 	public static void main(String[] args) throws IOException, ParseException {
 		Path arquivoXML = Paths.get(args[0]);
 		BufferedReader br = Files.newBufferedReader(arquivoXML, Charset.forName("UTF-8"));

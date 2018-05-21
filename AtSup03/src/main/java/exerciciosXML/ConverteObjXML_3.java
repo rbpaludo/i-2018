@@ -13,8 +13,19 @@ import exerciciosXML.turma.Endereco;
 import exerciciosXML.turma.Estudante;
 import exerciciosXML.turma.Turma;
 
+/**
+ * Classe para serializar uma instância de um objeto Turma e armazenar o resultado em um arquivo
+ * 
+ * @author rbpaludo
+ *
+ */
 public class ConverteObjXML_3 {
 	
+	/**
+	 * Cria uma instância de um objeto Turma e chama a função para serializar esta instância
+	 * 
+	 * @param args Não utilizado
+	 */
 	public static void main(String[] args) {
 		Turma turma = new Turma();
 		
@@ -43,6 +54,13 @@ public class ConverteObjXML_3 {
 		}
 	}
 	
+	/**
+	 * Serializa uma instância da classe Turma, serializa esta instância e armazena o resultado em um arquivo
+	 * @param turma Instância Turma a ser serializada
+	 * @throws IOException Caso aconteça algum erro durante o armazenamento de algum arquivo. 
+	 * 						Provavelmente por inexistência do arquivo informado.
+	 * @throws XMLStreamException Caso aconteça algum erro durante a serialização da instância criada. 
+	 */
 	public static void serializaTurma(Turma turma) throws IOException, XMLStreamException {
 		
 		XmlMapper objMapper = new XmlMapper();
