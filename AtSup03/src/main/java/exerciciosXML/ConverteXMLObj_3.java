@@ -18,7 +18,7 @@ public class ConverteXMLObj_3 {
 	
 	public static void desserializaTurma(String arquivo) throws IOException {
 		Path arquivoXML = Paths.get(arquivo);
-		BufferedReader br = Files.newBufferedReader(arquivoXML, Charset.forName("UTF-8"));
+		BufferedReader br = Files.newBufferedReader(arquivoXML/*, Charset.forName("UTF-8")*/);
 		XmlMapper objectMapper = new XmlMapper();
 		StringBuilder builder = new StringBuilder();
 		String data;
@@ -29,6 +29,7 @@ public class ConverteXMLObj_3 {
 		
 		Turma turma = objectMapper.readValue(builder.toString().getBytes(), Turma.class);
 
+		System.out.println("Esta é a Turma desserializada: \n\n");
 		System.out.println(turma.toString());
 	}
 }

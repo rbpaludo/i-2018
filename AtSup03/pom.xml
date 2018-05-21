@@ -35,4 +35,63 @@
 			<version>2.9.5</version>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+		
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-install-plugin</artifactId>
+				<version>2.4</version>
+
+				<!-- Execuções do comando mvn install -->
+				<executions>
+
+					<!-- Objeto Turma para XML -->
+					<execution>
+						<id>objXML</id>
+						<phase>package</phase>
+						<goals>
+							<goal>install-file</goal>
+						</goals>
+						<configuration>
+							<file>src/main/java/exerciciosXML/ConverteObjXML_3.java</file>
+							<groupId>IntegracaoAplicacoes</groupId>
+							<artifactId>TurmaObj_XML</artifactId>
+							<version>1.0</version>
+							<packaging>jar</packaging>
+							<localRepositoryPath>target</localRepositoryPath>
+							<!-- ... other properties -->
+						</configuration>
+					</execution>
+
+					<!-- XML para Objeto Turma -->
+					<execution>
+						<id>XMLobj</id>
+						<phase>package</phase>
+						<goals>
+							<goal>install-file</goal>
+						</goals>
+						<configuration>
+							<file>src/main/java/exerciciosXML/ConverteXMLObj_3.java</file>
+							<groupId>IntegracaoAplicacoes</groupId>
+							<artifactId>XML_TurmaObj</artifactId>
+							<version>1.0</version>
+							<packaging>jar</packaging>
+							<localRepositoryPath>target</localRepositoryPath>
+							<!-- ... other properties -->
+						</configuration>
+					</execution>
+					<!-- ... other executions -->
+				</executions>
+			</plugin>
+			
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.2.1</version>
+			</plugin>
+			
+		</plugins>
+	</build>
 </project>

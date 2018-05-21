@@ -89,7 +89,7 @@ public class Individuo {
 			output += "\n - Vinculos: \n" + Arrays.toString(vinculos);
 		}
 		
-		output += "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*";
+		output += "\n\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*";
 		return output;
 	}
 }
