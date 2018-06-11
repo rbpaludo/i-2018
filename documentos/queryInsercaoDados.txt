@@ -1,0 +1,102 @@
+Endereco
+db.endereco.insert({
+	surrogate_key:1, 
+	bairro:"Itoupava Seca", 
+	distrito:"Yokohama", 
+	codigo_municipio:1, 
+	estado:"Acre", 
+	cep:"987654321", 
+	caixa_postal:54321, 
+	pais:"Rússia", 
+	tipo:"Tipo 2", 
+	linhas_endereco:[
+		{ordem:321, linha:"Linha3", 
+		ordem:122, linha:"Linha2"}], 
+	data_inicio:{data:"1/1/1971", acuracia:"Aproximada"}, 
+	data_fim:{data:"", acuracia:"Desconhecida"}
+});
+
+Identificador
+db.identificador.insert({
+	surrogate_key:1, 
+	designacao:"Designação 2", 
+	area:"Area 51", 
+	emissor:"Emissora 37", 
+	data:"11/12/2013", 
+	tipo:"Tipo 3", 
+	ctps:{
+		serie:"Serie321", 
+		estado:"Estado legal"}, 
+	certidao:{
+		tipo:"Tipo 4", 
+		cartorio:"Margarida", 
+		livro:"Livro 3724", 
+		folha:"Folha 69", 
+		termo:"Termo 42"}, 
+	titulo_eleitoral:{
+		secao:"Secao 37", 
+		zona:"Zona 042"}
+});
+
+Nome
+db.nome.insert({
+	surrogate_key:1, 
+	titulos:"Doutor", 
+	nomes:"Zacarias", 
+	sobrenomes:"Epaminondas Jr", 
+	sufixos:"Não se aplica", 
+	preferido:"Zeca", 
+	uso_condicional:"Se aplica", 
+	utilizacao:[
+		{uso:"Não", data_inicial:"2/3/1974", data_final:"22/2/2017"}], 
+	representacao:[
+		{utilizacao:"Sempre", alternativa:"A"}]
+});
+
+Dado Demográfico
+db.dado_demografico.insert({
+	sexo:"Masculino", 
+	nome_mae:"Gerovildes", 
+	nome_pai:"Epaminondas", 
+	situacao_familiar:"Ótima", 
+	raca:"Negro", 
+	comentario:"Nada a declarar", 
+	fonte_notif_obito:"Hospital Jacarandáss", 
+	nascimento_pluralidade:"Não se aplica", 
+	nascimento_ordem:"Primeiro", 
+	nascimento_seguimento:"Desconhecido", 
+	data_obito:{data:"", acuracia:"Desconhecida"}, 
+	data_nascimento:{data:"2/1/1972", acuracia:"Aproximada"}, 
+	nacionalidade:{
+		municipio:"SINOP", 
+		estado:"Mato Grosso", 
+		pais:"Brasil", 
+		data_entrada:"24/11/1999"},
+	individuo_surrogate_key:1
+});
+
+Comunicação
+db.comunicacao.insert({
+	individuo_surrogate_key:1, 
+	meio:"Telefone", 
+	preferencia:"Manhã", 
+	detalhe:"Antes das 10", 
+	uso:"Ocasional"
+});
+
+Vínculo
+db.vinculo.insert({
+	relacionamento:"Filho", 
+	data_inicio:"2/4/1973", 
+	data_fim:"21/12/2012", 
+	individuo_surrogate_key:1, 
+	identificador_surrogate_key:1
+});
+
+Individuo
+db.individuo.insert({
+	surrogate_key:1, 
+	endereco:[1], 
+	nome:[1], 
+	identificador:[1]
+});
