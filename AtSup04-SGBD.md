@@ -13,4 +13,4 @@ O diretório está neste [link](https://github.com/rbpaludo/i-2018/tree/master/n
 Clique nos seguintes links para ver as queries:  
 * [Inserção de dados](https://github.com/rbpaludo/i-2018/blob/master/documentos/queriesCasosUso.txt)  
 * [Consulta de dados](https://github.com/rbpaludo/i-2018/blob/master/documentos/queriesCasosUso1.txt)  
-#### Questões 5 e 6 estão implementadas no diretório AtSup04
+#### Questões 5 e 6 serão implementadas no diretório AtSup04, não foi possível fazer a implementação pelo trabalho não ter sido iniciado em tempo hábil e ter sido escolhida uma tecnologia não familiar ao aluno(nosql databases).
