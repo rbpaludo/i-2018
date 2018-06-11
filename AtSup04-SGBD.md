@@ -11,5 +11,6 @@ Para ver os comandos de inserção desses dados clique [aqui](https://github.com
 O diretório está neste [link](https://github.com/rbpaludo/i-2018/tree/master/nosql)  
 #### 4. Crie consultas para atender os casos de uso descritos e disponíveis na mesma URL fornecida acima (também na opção “Software” do menu). Naturalmente, as consultas deverão ser realizadas em conformidade com a base de dados produzida para o item 1 (fornecido acima). Observe que não necessariamente é uma consulta por caso de uso, talvez sejam necessárias várias consultas por caso de uso. Você deve analisar os casos de uso e definir as consultas necessárias para implementá-los.  
 Clique nos seguintes links para ver as queries:  
-* [Inserção de dados]()  
+* [Inserção de dados](https://github.com/rbpaludo/i-2018/blob/master/documentos/queriesCasosUso.txt)  
+* [Consulta de dados](https://github.com/rbpaludo/i-2018/blob/master/documentos/queriesCasosUso1.txt)  
 #### Questões 5 e 6 estão implementadas no diretório AtSup04
