@@ -1,0 +1,13 @@
+Query necessária para localização de identificações:
+db.nome.find({nomes:"<nome>", sobrenomes:"<sobrenomes>"});
+
+Queries necessárias para consulta de identificações:
+1. db.nome.find({nomes:"<nome>", sobrenomes:"<sobrenomes>"});
+2. db.dado_demografico.find({sexo:"<sexo>", nome_mae:"<nome_mae>", data_nasc:"<data>"});
+3. db.individuo.find({surrogate_key:{$in:[<chaves encontradas pela query 2>]}, nome: {$elemMatch: {$eq:<chave encontrada pela query 1>}}});
+4. db.endereco.find({surrogate_key:{$in:[<enderecos do individuo encontrado>]}});
+5. db.vinculo.find({individuo_surrogate_key:<chave do individuo encontrado>});
+6. db.comunicacao.find({individuo_surrogate_key:<chave do individuo encontrado>});
+7. db.identificador.find({surrogate_key:{$in:[<identificadores do individuo encontrado>]}});
+8. db.nome.find({surrogate_key:{$in:[<nomes do individuo encontrado>]}});
+9. db.dado_demografico.find({surrogate_key:<chave do individuo encontrado>});
