@@ -1,3 +1,109 @@
+----------------------- Primeiro Registro de Identificação -----------------------
+Endereco
+db.endereco.insert({
+	surrogate_key:0, 
+	bairro:"Bairro", 
+	distrito:"Distrito", 
+	codigo_municipio:0, 
+	estado:"Estado", 
+	cep:"123456789", 
+	caixa_postal:12345, 
+	pais:"Pais", 
+	tipo:"Tipo", 
+	linhas_endereco:[
+		{ordem:123, linha:"Linha1", 
+		ordem:122, linha:"Linha2"}], 
+	data_inicio:{data:"1/1/1970", acuracia:"Exata"}, 
+	data_fim:{data:"21/12/2012", acuracia:"Exata"}
+});
+
+Identificador
+db.identificador.insert({
+	surrogate_key:0, 
+	designacao:"Designação", 
+	area:"Area", 
+	emissor:"Emissor", 
+	data:"11/11/2011", 
+	tipo:"Tipo", 
+	ctps:{
+		serie:"Serie123", 
+		estado:"Estado"}, 
+	certidao:{
+		tipo:"Tipo", 
+		cartorio:"Cartorio", 
+		livro:"Livro", 
+		folha:"Folha", 
+		termo:"Termo"}, 
+	titulo_eleitoral:{
+		secao:"Secao", 
+		zona:"Zona"}
+});
+
+Nome
+db.nome.insert({
+	surrogate_key:0, 
+	titulos:"Titulos", 
+	nomes:"Nomes", 
+	sobrenomes:"Sobrenomes", 
+	sufixos:"Sufixos", 
+	preferido:"Preferido", 
+	uso_condicional:"Uso Condicional", 
+	utilizacao:[
+		{uso:"Uso", data_inicial:"1/1/1970", data_final:"21/12/2012"}], 
+	representacao:[
+		{utilizacao:"Utilizacao", alternativa:"Alternativa"}]
+});
+
+Dado Demográfico
+db.dado_demografico.insert({
+	sexo:"Sexo", 
+	nome_mae:"Gerovildes", 
+	nome_pai:"Epaminondas", 
+	situacao_familiar:"Situacao", 
+	raca:"Raca", 
+	comentario:"Comentario", 
+	fonte_notif_obito:"Fonte", 
+	nascimento_pluralidade:"Pluralidade", 
+	nascimento_ordem:"Ordem", 
+	nascimento_seguimento:"Seguimento", 
+	data_obito:{data:"21/12/2012", acuracia:"Exata"}, 
+	data_nascimento:{data:"1/1/1970", acuracia:"Exata"}, 
+	nacionalidade:{
+		municipio:"Municipio", 
+		estado:"Estado", 
+		pais:"Pais", 
+		data_entrada:"24/12/1999"},
+	individuo_surrogate_key:0
+});
+
+Comunicação
+db.comunicacao.insert({
+	individuo_surrogate_key:0, 
+	meio:"Meio", 
+	preferencia:"Preferencia", 
+	detalhe:"Detalhe", 
+	uso:"Uso"
+});
+
+Vínculo
+db.vinculo.insert({
+	relacionamento:"Relacionamento", 
+	data_inicio:"1/1/1970", 
+	data_fim:"21/12/2012", 
+	individuo_surrogate_key:0, 
+	identificador_surrogate_key:0
+});
+
+Individuo
+db.individuo.insert({
+	surrogate_key:0, 
+	endereco:[0], 
+	nome:[0], 
+	identificador:[0]
+});
+
+----------------------- Segundo Registro de Identificação -----------------------
+
 Endereco
 db.endereco.insert({
 	surrogate_key:1, 
